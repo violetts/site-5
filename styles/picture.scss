@@ -1,0 +1,24 @@
+.picture {
+    
+    &__pic-main {
+        margin: 0;
+        height: 377px;
+        overflow: hidden;
+        margin: 0 0 10px;
+        
+    }
+    
+    &__pic-thumbnail-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    
+    &__pic-thumbnail {
+        width: 150px;
+        padding: 5px;
+        border: 1px solid $color-grey_dark;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}

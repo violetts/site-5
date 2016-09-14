@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    
+    
+    &__item {
+        color: $color-grey_dark;
+        font-size: 0.9375rem;
+    }
+    
+    &__icon {
+        color: $color-orange;
+        padding: 0 10px;
+    }
+}

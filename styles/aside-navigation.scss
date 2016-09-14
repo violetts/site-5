@@ -1,0 +1,33 @@
+.aside-navigation {
+    display: flex;
+    position: relative;
+    
+    &__triangle {
+        position: absolute;
+        color: $color-orange;
+        font-size: 26px;
+        bottom: -17px;
+        left: 128px;
+    }
+    
+    &__link {
+        font-family: $font-menu;
+        font-size: 1.1875rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-white;
+        padding: 6px 10px;
+        flex: 1;
+        
+        &_pink {
+            background: $color-pink;
+        }
+        &_orange {
+            background: $color-orange;
+        }
+        &_blue {
+            background: $color-blue;
+            flex: 2;
+        }
+    }
+}

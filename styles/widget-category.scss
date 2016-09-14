@@ -1,0 +1,99 @@
+.widget-category {
+    
+    &_noborder .widget-category__item {
+        border-bottom: 0;
+        padding: 20px 0 0;
+    }
+    
+    &_triangle .widget-category__item {
+        padding: 10px 0px 8px 24px;
+    }
+    
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0;
+        border-bottom: 1px solid $color-grey;
+        position: relative;
+    }
+    
+    &__header {
+        background: $color-violet;
+        color: $color-white;
+        border: 0;
+        text-transform: uppercase;
+        font-size: 1.1875rem;
+        font-family: $font-menu;
+        padding: 7px 18px;
+        
+        &_cut {
+            position: relative;
+            max-width: 150px;
+            
+            &:before {
+                content:'';
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                display: inline-block;
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
+                border-top: 40px solid #fff;
+                top: 0;
+                right: -42px;
+            }
+        }
+    }
+    
+    &__aside-navigation {
+        margin: 2px 0 0;
+    }
+    
+    &__title {
+        color: $color-blue;
+        font-size: 0.9375rem;
+        margin: 0 0 0.4em;
+    }
+    
+    &__content {
+        font-size: 0.8125rem;
+        margin: 0;
+    }
+    
+    &__link {
+        color: $color-blue;
+        font-size: 0.8125rem;
+        text-decoration: none;
+        display: inline-block;
+        margin: 18px 0 0;
+    }
+    
+    &__icon {
+        color: $color-blue;
+    }
+    
+    &__right {
+        width: 225px;
+    }
+    
+    &__left {
+        width: 85px;
+    }
+    
+    &__img {
+        padding: 2px;
+        border: 1px solid $color-grey_dark;
+    }
+    
+     & + & {
+        margin-top: 20px;
+    }
+    
+    &__triangle {
+        position: absolute;
+        color: $color-violet;
+        left: 0;
+        font-size: 1.2rem;
+        top: 16px;
+    }
+}

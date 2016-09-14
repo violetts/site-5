@@ -1,0 +1,21 @@
+.social {
+    font-size: 2.5rem;
+    
+    &__item {
+        &_rss {
+            color: $color-orange;
+        }
+
+        &_facebook {
+            color: $color-violet;
+        }
+
+        &_tumbler {
+            color: $color-blue;
+        }
+        
+        & + & {
+            margin-left: 10px;
+        }
+    }
+}

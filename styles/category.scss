@@ -1,0 +1,72 @@
+.category {
+    
+    &__title {
+        font-family: $font-menu;
+        font-size: 1.1875rem;
+        text-transform: uppercase;
+        color: $color-blue;
+        margin: 0 0 0.5rem;
+    }
+    
+    &__button {
+        position: relative;
+        margin: 3px 0 0;
+        
+        &_blue {
+            background: $color-blue;
+        }
+        &_orange {
+            background: $color-orange;
+        }
+        &_pink {
+            background: $color-pink;
+        }
+        &_violet {
+            background: $color-violet;
+        }
+    }
+    
+    &__triangle {
+        position: absolute;
+        color: #fff;
+        font-size: 21px;
+        top: calc(50% - 10px);
+        left: 13px;
+    }
+    
+    &__link {
+        display: inline-block;
+        font-family: $font-menu;
+        font-size: 1.1875rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-white;
+        padding: 7px 30px;
+        width: 100%;
+    }
+    
+    &__descript {
+        color: $color-grey_dark;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        margin: 10px 0 0;
+    }
+    
+    &__items {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    
+    &__item {
+        width: 324px;
+    }
+    
+    &__img {
+        height: 183px;
+        overflow: hidden;
+    }
+}
+
+
+
