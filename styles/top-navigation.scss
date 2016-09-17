@@ -16,17 +16,11 @@
         margin: 0;
         display: flex;
         flex-flow: row nowrap;
-        //justify-content: flex-start;
     }
     
     &__item {
         padding: 7px 20px;
         flex: 1 1 90px;
-        text-align: center;
-
-        &:nth-child(4) {
-            flex: 170px;
-        }
         
         &_blue {
             background: $color-blue;
@@ -37,15 +31,12 @@
         }
         &_violet {
             background: $color-violet;
-            flex: 110px;
         }
         &_orange {
             background: $color-orange;
-            flex: 105px;
         }
         &_red {
             background: $color-red;
-            flex: 112px;
             
         }
         &_pink {
@@ -53,7 +44,7 @@
         }
         &_grey {
             background: $color-grey_dark;
-            flex: 400px;
+            flex: 2 1 400px;
         }
     }
 }

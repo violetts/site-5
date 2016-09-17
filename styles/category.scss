@@ -11,27 +11,8 @@
     &__button {
         position: relative;
         margin: 3px 0 0;
+        overflow: hidden;
         
-        &_blue {
-            background: $color-blue;
-        }
-        &_orange {
-            background: $color-orange;
-        }
-        &_pink {
-            background: $color-pink;
-        }
-        &_violet {
-            background: $color-violet;
-        }
-    }
-    
-    &__triangle {
-        position: absolute;
-        color: #fff;
-        font-size: 21px;
-        top: calc(50% - 10px);
-        left: 13px;
     }
     
     &__link {
@@ -59,7 +40,7 @@
     }
     
     &__item {
-        width: 324px;
+        width: 32.72727272727273%;
     }
     
     &__img {

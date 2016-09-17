@@ -1,0 +1,48 @@
+.form {
+    max-width: 518px;
+    
+    &__row {
+        
+        & + & {
+            margin-top: 25px;
+        }
+        
+        &:nth-of-type(4) .form__label:last-of-type {
+            vertical-align: top;
+        }
+        
+        &:last-of-type {
+            text-align: right;
+        }
+    }
+    
+    &__label {
+        display: inline-block;
+        width: 80px;
+        vertical-align: middle;
+        
+        &:nth-child(4) {
+            vertical-align: top;
+        }
+    }
+    
+    &__input {
+        width: 430px;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid $color-grey_dark;
+    }
+    
+    &__textarea {
+        border-radius: 3px;
+    }
+    
+    &__button {
+        border: 0;
+        max-width: 350px;
+        padding: 8px 20px;
+        color: #fff;
+        background: #f78f1d;
+        border-radius: 3px;
+    }
+}

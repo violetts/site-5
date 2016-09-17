@@ -1,4 +1,27 @@
 .button {
+    position: relative;
+    padding: 7px 30px;
+    font-family: "Helvetica LT Condensed Bold";
+    font-size: 1.1875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    
+    &_blue {
+        background: $color-blue;
+    }
+    &_orange {
+        background: $color-orange;
+    }
+    &_pink {
+        background: $color-pink;
+    }
+    &_violet {
+        background: $color-violet;
+    }
+    
     
     &__search {
         background: $color-blue;
@@ -8,6 +31,14 @@
         font-size: 1.1875rem;
         font-family: $font-menu;
         padding: 10px 18px;
+    }
+    
+    &__triangle {
+        position: absolute;
+        color: #fff;
+        font-size: 21px;
+        top: calc(50% - 10px);
+        left: 13px;
     }
 }
 

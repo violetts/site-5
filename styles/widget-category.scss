@@ -73,16 +73,17 @@
     }
     
     &__right {
-        width: 225px;
+        width: 65.34281069709623%;
     }
     
     &__left {
-        width: 85px;
+        width: 27.09336053294234%;
     }
     
     &__img {
         padding: 2px;
         border: 1px solid $color-grey_dark;
+        width: 100%;
     }
     
      & + & {
