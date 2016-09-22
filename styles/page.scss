@@ -6,33 +6,11 @@
     
     &__container {
         max-width: 1054px;
+        width: auto;
         margin: 0 auto;
         background: #fff;
         padding: 50px 32px;
         box-sizing: border-box;
-        
-         &:before {
-            position: absolute;
-            content:'';
-            width: 50%;
-            height: 371px;
-            background-image: repeating-linear-gradient(38deg, transparent 0px, transparent 270px, $color-blue 270px, $color-blue 315px, $color-green 315px, $color-green 360px, $color-violet 360px, $color-violet 405px, $color-pink 405px, $color-pink 450px, $color-orange 450px, $color-orange 495px);
-            left: 0;
-            top: -80px;
-            z-index: -1;
-        }
-        
-        &:after {
-            position: absolute;
-            content:'';
-            width: 50%;
-            height: 92%;
-             background-image: repeating-linear-gradient(135deg, $color-orange 0px, $color-orange 25px, $color-pink 25px, $color-pink 50px, $color-violet 50px, $color-violet 75px, $color-green 75px, $color-green 100px, $color-blue 100px, $color-blue 125px, $color-orange 125px, $color-orange 150px, $color-pink 150px, $color-pink 175px, $color-violet 175px, $color-violet 200px, $color-green 200px, $color-green 225px, $color-blue 225px, $color-blue 250px, $color-orange 250px, $color-orange 275px, $color-pink 275px, $color-pink 300px, $color-violet 300px, $color-violet 325px, $color-green 325px, $color-green 350px, $color-blue 350px, $color-blue 375px, transparent 375px, transparent 535px);
-            z-index: 0;
-            top:0;
-            right: 415px;
-            z-index: -1;
-        }
     }
     
     &__header {
@@ -49,13 +27,13 @@
     
     &__footer {
         text-align: center;
-        padding: 40px 0;
+        padding: 2.965159377316531% 0;
         position: relative;
         
         &:before {
             position: absolute;
             content: '';
-            width: 1054px;
+            max-width: 1054px;
             height: 5px;
             right: 0px;
             left: 0;

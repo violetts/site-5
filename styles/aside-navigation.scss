@@ -21,13 +21,26 @@
         
         &_pink {
             background: $color-pink;
+            
+            &:hover {
+              background: $color-pink_dark;  
+            }
         }
+        
         &_orange {
             background: $color-orange;
+            
+            &:hover {
+              background: $color-orange_dark;  
+            }
         }
         &_blue {
             background: $color-blue;
             flex: 2;
+            
+            &:hover {
+              background: $color-blue_dark;  
+            }
         }
     }
 }

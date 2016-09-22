@@ -20,31 +20,63 @@
     
     &__item {
         padding: 7px 20px;
-        flex: 1 1 90px;
+        flex: 1;
         
         &_blue {
             background: $color-blue;
+            
+            &:hover {
+                background: $color-blue_dark;
+            }
         }
+        
         &_green {
             background: $color-green;
             
+            &:hover{ 
+                background: $color-green_dark;
+                }
         }
+        
         &_violet {
             background: $color-violet;
+        
+            &:hover {
+                 background: $color-violet_dark;
+            }
         }
+        
         &_orange {
             background: $color-orange;
+            
+            &:hover {
+                background: $color-orange_dark;
+            }
         }
+        
         &_red {
             background: $color-red;
+             
+            &:hover {
+                background: $color-red_dark;
+            }
             
         }
         &_pink {
             background: $color-pink;
+            
+             &:hover {
+                background: $color-pink_dark;
+            }
         }
+        
         &_grey {
             background: $color-grey_dark;
-            flex: 2 1 400px;
+            flex: 2;
+            
+              &:hover {
+                background: $color-grey_dark;
+            }
         }
     }
 }

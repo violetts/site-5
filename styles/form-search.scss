@@ -18,5 +18,10 @@
         padding: 7px 18px;
         display: inline-block;
         vertical-align: top;
+        min-width: 100px;
+        
+        &:hover {
+            background: $color-blue_dark;
+        }
     }
 }

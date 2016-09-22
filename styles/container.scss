@@ -1,7 +1,8 @@
 .container {
+    position: relative;
     
     &__header {
-        margin: 33px 0 0;
+        margin: 3.3333333333333335% 0 0;
     }
     
     &__content {
@@ -9,5 +10,35 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         padding: 22px 0;
+    }
+    
+    
+    &:before {
+         position: absolute;
+            content:'';
+            width: 31.762295081967213%; 
+            height: 471px;
+            background-image: repeating-linear-gradient(38deg, transparent 0px, transparent 270px, $color-blue 270px, $color-blue 315px, $color-green 315px, $color-green 360px, $color-violet 360px, $color-violet 405px, $color-pink 405px, $color-pink 450px, $color-orange 450px, $color-orange 495px);
+            left: -346px;
+            top: -211px;
+    }
+    
+    
+    &:after {
+        position: absolute;
+            content:'';
+            width: 1.0245901639344261%; 
+            height: 2250px;
+             background-image: repeating-linear-gradient(135deg, $color-orange 0px, $color-orange 25px, $color-pink 25px, $color-pink 50px, $color-violet 50px, $color-violet 75px, $color-green 75px, $color-green 100px, $color-blue 100px, $color-blue 125px, $color-orange 125px, $color-orange 150px, $color-pink 150px, $color-pink 175px, $color-violet 175px, $color-violet 200px, $color-green 200px, $color-green 225px, $color-blue 225px, $color-blue 250px, $color-orange 250px, $color-orange 275px, $color-pink 275px, $color-pink 300px, $color-violet 300px, $color-violet 325px, $color-green 325px, $color-green 350px, $color-blue 350px, $color-blue 375px, transparent 375px, transparent 535px);
+            top: -85px;
+            right: -43px;
+    }
+}
+
+
+@media (max-width: 1095px) {
+    .container:before,
+    .container:after {
+        display: none;
     }
 }

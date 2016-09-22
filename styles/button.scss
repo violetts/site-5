@@ -11,15 +11,34 @@
     
     &_blue {
         background: $color-blue;
+        
+        &:hover {
+            background: $color-blue_dark;
+        }
     }
+    
     &_orange {
         background: $color-orange;
+        
+        &:hover {
+            background: $color-orange_dark;
+        }
     }
+    
     &_pink {
         background: $color-pink;
+        
+        &:hover {
+            background: $color-pink_dark;
+        }
     }
+    
     &_violet {
         background: $color-violet;
+        
+        &:hover {
+            background: $color-violet_dark;
+        }
     }
     
     
