@@ -3,16 +3,25 @@
     font-family: $font-menu;
     color: $color-white;
     
-    &__letter {
-        background: $color-blue;
+    &__word {
+        display: inline-block;
+    }
+    
+     &__word .logo__letter {
         padding: 15px 0px 0px;
+        background: $color-blue;
         
         &:nth-child(even) {
             background: $color-green;
         }
+    }
+    
+    &__word_smaller .logo__letter {
+        padding-top: 5px;
+        background: $color-green;
         
-        &:nth-child(1n+4) {
-            padding-top: 5px;
+        &:nth-child(even) {
+            background: $color-blue;
         }
     }
 }

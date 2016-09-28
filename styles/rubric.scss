@@ -36,7 +36,8 @@
     
     &__content {
         font-size: 0.875rem;
-        margin: 1.845784689216003% 0;
+        margin: 2% 0 0;
+        line-height: 1.4rem;
         
         &:last-child {
             margin: 30px 0 0;
@@ -46,5 +47,9 @@
     &__picture {
         padding: 1.845784689216003%;
         border: 1px solid $color-grey_dark;
+    }
+    
+    &__footer {
+        margin: 20px 0;
     }
 }

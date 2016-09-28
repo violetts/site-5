@@ -1,6 +1,6 @@
 .button {
     position: relative;
-    padding: 7px 30px;
+    padding: 7px 0 7px 30px;
     font-family: "Helvetica LT Condensed Bold";
     font-size: 1.1875rem;
     text-transform: uppercase;
@@ -8,6 +8,7 @@
     color: #fff;
     display: inline-block;
     width: 100%;
+    box-sizing: border-box;
     
     &_blue {
         background: $color-blue;

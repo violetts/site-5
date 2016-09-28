@@ -2,6 +2,7 @@
     max-width: 518px;
     
     &__row {
+        display: flex;
         
         & + & {
             margin-top: 25px;
@@ -12,23 +13,17 @@
         }
         
         &:last-of-type {
-            text-align: right;
+            justify-content: flex-end;
         }
     }
     
     &__label {
-        display: inline-block;
-        width: 80px;
-        vertical-align: middle;
-        
-        &:nth-child(4) {
-            vertical-align: top;
-        }
+        flex: 1;
     }
     
     &__input {
         width: 430px;
-        height: 30px;
+        height: $ui-height-l;
         border-radius: 3px;
         border: 1px solid $color-grey_dark;
     }
@@ -39,8 +34,8 @@
     
     &__button {
         border: 0;
+        height: $ui-height-l;
         max-width: 350px;
-        padding: 8px 20px;
         color: #fff;
         background: #f78f1d;
         border-radius: 3px;

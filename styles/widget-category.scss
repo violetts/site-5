@@ -2,7 +2,7 @@
     
     &_noborder .widget-category__item {
         border-bottom: 0;
-        padding: 6.374908360692315% 0 0;
+        padding: 7.374908360692315% 0 0;
     }
     
     &_triangle .widget-category__item {
@@ -12,7 +12,7 @@
     &__item {
         display: flex;
         justify-content: space-between;
-        padding: 16px 0;
+        padding: 15px 0;
         border-bottom: 1px solid $color-grey;
         position: relative;
     }
@@ -73,11 +73,11 @@
     }
     
     &__right {
-        width: 65.34281069709623%;
+        width: 69.342811%;
     }
     
     &__left {
-        width: 27.09336053294234%;
+        width: 23.093361%;
     }
     
     &__img {
@@ -87,7 +87,7 @@
     }
     
      & + & {
-        margin-top: 6.3897763578274756%;
+        margin-bottom: 10.3897763578274756%;
     }
     
     &__triangle {
