@@ -22,13 +22,16 @@
         color: $color-white;
         border: 0;
         text-transform: uppercase;
-        font-size: 1.1875rem;
-        font-family: $font-menu;
+        font-size: 19px;
+        font-family: $font-helvetica-bold;
         padding: 2.2312179262423104% 5.737417524623083%;
+        display: inline-block;
+        width: 100%;
         
         &_cut {
             position: relative;
             max-width: 150px;
+            margin: 0;
             
             &:before {
                 content:'';
@@ -36,11 +39,11 @@
                 width: 0px;
                 height: 0px;
                 display: inline-block;
-                border-left: 40px solid transparent;
-                border-right: 40px solid transparent;
-                border-top: 40px solid #fff;
+                border-left: 38px solid #5261ac;
+                border-right: 38px solid transparent;
+                border-top: 38px solid transparent;
                 top: 0;
-                right: -42px;
+                right: -75px;
             }
         }
     }
@@ -51,12 +54,12 @@
     
     &__title {
         color: $color-blue;
-        font-size: 0.9375rem;
+        font-size: 15px;
         margin: 0 0 0.4em;
     }
     
     &__content {
-        font-size: 0.8125rem;
+        font-size: 13px;
         margin: 0;
     }
     
@@ -82,7 +85,7 @@
     
     &__img {
         padding: 2px;
-        border: 1px solid $color-grey_dark;
+        border: 1px solid $color-grey-dark;
         width: 100%;
     }
     

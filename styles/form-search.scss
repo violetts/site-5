@@ -4,7 +4,8 @@
    
     &__input {
         width: 333px;
-        border: 1px solid $color-grey_dark;
+        font-family: $font-helvetica-bold;
+        border: 1px solid $color-grey-dark;
     }
     
     &__button {
@@ -12,13 +13,12 @@
         color: $color-white;
         border: 0;
         text-transform: uppercase;
-        font-size: 1.1875rem;
-        font-family: $font-menu;
-        padding: 0 18px;
-        min-width: 100px;
+        font-size: 19px;
+        font-family: $font-helvetica-bold;
+        padding: 0 4.13393964448119%;;
         
         &:hover {
-            background: $color-blue_dark;
+            background: $color-blue-dark;
         }
     }
 }

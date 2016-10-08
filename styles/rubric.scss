@@ -3,43 +3,20 @@
     
     &__title {
         margin:0;
-        font-size: 2.1875rem;
+        font-size: 35px;
         color: $color-black;
         font-weight: 600;
         position: relative;
     }
     
-    &__decoration-date {
-        display: inline-block;
-        position: absolute;
-        left: -80px;
-        top: 0;
-        background: $color-orange;
-        text-align: center;
-        color: $color-white;
-        font-size: 2.1875rem;
-        font-family: $font-menu;
-        padding: 10px 12px 2px 20px;
-    }
-    
-     &__decoration-month {
-        display: inline-block;
-        position: absolute;
-        left: -66px;
-        top: 56px;
-        background: $color-blue;
-        text-align: center;
-        color: $color-white;
-        font-size: 1.1875rem;
-        font-family: $font-menu;
-        text-transform: uppercase;
-        padding: 0 12px;
+    &__datetime {
+        position: relative;
     }
     
     &__content {
-        font-size: 0.875rem;
+        font-size: 14px;
         margin: 2% 0 0;
-        line-height: 1.4rem;
+        line-height: 1.4;
         
         &:last-child {
             margin: 30px 0 0;
@@ -48,10 +25,28 @@
     
     &__picture {
         padding: 1.845784689216003%;
-        border: 1px solid $color-grey_dark;
+        border: 1px solid $color-grey-dark;
+        margin: 0 0 20px;
     }
     
     &__footer {
-        margin: 20px 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__category,
+    &__comment,
+    &__read-more {
+        color: $color-grey-dark;
+        font-size: 0.9375rem;
+    }
+    
+     &__icon {
+        color: $color-orange;
+        padding: 0 10px;
+    }
+    
+    & + & {
+        margin-top: 40px;
     }
 }

@@ -1,19 +1,19 @@
 .logo {
-    font-size: 2.6875rem;
-    font-family: $font-menu;
+    font-size: 43px;
+    font-family: $font-helvetica-bold;
     color: $color-white;
     
-    &__word {
-        display: inline-block;
-    }
-    
-     &__word .logo__letter {
+    &__letter {
         padding: 15px 0px 0px;
         background: $color-blue;
         
         &:nth-child(even) {
             background: $color-green;
         }
+    }
+    
+    &__word {
+        display: inline-block;
     }
     
     &__word_smaller .logo__letter {

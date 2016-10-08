@@ -11,7 +11,7 @@
     }
     
     &__link {
-        font-family: $font-menu;
+        font-family: $font-helvetica-bold;
         font-size: 1.1875rem;
         text-transform: uppercase;
         text-decoration: none;
@@ -31,7 +31,7 @@
             background: $color-orange;
             
             &:hover {
-              background: $color-orange_dark;  
+              background: $color-orange-dark;  
             }
         }
         &_blue {
@@ -39,7 +39,7 @@
             flex: 2;
             
             &:hover {
-              background: $color-blue_dark;  
+              background: $color-blue-dark;  
             }
         }
     }

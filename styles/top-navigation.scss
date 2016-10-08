@@ -1,13 +1,13 @@
 .top-navigation {
+    font-family: $font-helvetica-bold;
+    font-size: 19px;
+    text-transform: uppercase;
     
     &__link {
-        font-family: $font-menu;
-        font-size: 1.1875rem;
-        text-transform: uppercase;
         text-decoration: none;
         color: $color-white;
-        display: inline-block;
-        width: 100%;
+        display: block;
+        padding: 7px 20px;
     }
     
     &__items {
@@ -19,46 +19,46 @@
     }
     
     &__item {
-        padding: 7px 20px;
         flex: 1;
         
-        &_blue {
+        &_ccauthor,
+        &_home {
             background: $color-blue;
             
             &:hover {
-                background: $color-blue_dark;
+                background: $color-blue-dark;
             }
         }
         
-        &_green {
+        &_cinema {
             background: $color-green;
             
             &:hover{ 
-                background: $color-green_dark;
+                background: $color-green-dark;
                 }
         }
         
-        &_violet {
+        &_magazine {
             background: $color-violet;
         
             &:hover {
-                 background: $color-violet_dark;
+                 background: $color-violet-dark;
             }
         }
         
-        &_orange {
+        &_topmenu {
             background: $color-orange;
             
             &:hover {
-                background: $color-orange_dark;
+                background: $color-orange-dark;
             }
         }
         
-        &_red {
+        &_archive {
             background: $color-red;
              
             &:hover {
-                background: $color-red_dark;
+                background: $color-red-dark;
             }
             
         }
@@ -70,12 +70,12 @@
             }
         }
         
-        &_grey {
-            background: $color-grey_dark;
+        &_contacts {
+            background: $color-grey-dark;
             flex: 2;
             
               &:hover {
-                background: $color-grey_dark;
+                background: $color-grey-dark;
             }
         }
     }

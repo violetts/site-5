@@ -1,6 +1,6 @@
 .page {
     background: $color-grey;
-    font-family: $font-copy;
+    font-family: $font-helvetica;
     position: relative;
     z-index: 0;
     
@@ -42,7 +42,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 22px 0;
+        padding: 22px 0 0;
     }
 
      &__content {
@@ -61,18 +61,6 @@
         text-align: center;
         padding: 2.965159377316531% 0;
         position: relative;
-        
-        &:before {
-            position: absolute;
-            content: '';
-            max-width: 1054px;
-            height: 5px;
-            right: 0px;
-            left: 0;
-            top: 0;
-            margin: 0 auto;    
-            background-image: repeating-linear-gradient(90deg, $color-pink 0px, $color-pink 35px, $color-violet 35px, $color-violet 70px, $color-green 70px, $color-green 105px, $color-blue 105px, $color-blue 140px, $color-orange 140px, $color-orange 175px);
-        }
     }
 }
  

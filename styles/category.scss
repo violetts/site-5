@@ -1,7 +1,7 @@
 .category {
     
     &__title {
-        font-family: $font-menu;
+        font-family: $font-helvetica-bold;
         font-size: 1.1875rem;
         text-transform: uppercase;
         color: $color-blue;
@@ -14,7 +14,7 @@
     
     &__link {
         display: inline-block;
-        font-family: $font-menu;
+        font-family: $font-helvetica-bold;
         font-size: 1.1875rem;
         text-transform: uppercase;
         text-decoration: none;
@@ -24,7 +24,7 @@
     }
     
     &__descript {
-        color: $color-grey_dark;
+        color: $color-grey-dark;
         font-size: 0.9375rem;
         font-weight: 600;
         margin: 10px 0 0;
@@ -33,11 +33,15 @@
     &__items {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        padding: 0;
     }
     
     &__item {
         width: 32.72727272727273%;
+        
+        & + & {
+            margin-left: 1%;
+        }
     }
     
     &__img {

@@ -3,7 +3,7 @@ Error: Undefined variable: "$font-copy".
         on line 2 of C:\Users\User\Desktop\FrontEnd\CSS\site-5\styles\copy.scss
 
 1: .copy {
-2:     font-family: $font-copy;
+2:     font-family: $font-helvetica;
 3:     font-size: $fs-copy;
 4: }
 
