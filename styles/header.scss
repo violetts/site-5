@@ -2,5 +2,9 @@
     
     &__bar {
         margin: 0 0 2%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
 }

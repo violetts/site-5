@@ -1,7 +1,13 @@
-.picture {
-        height: 377px;
-        overflow: hidden;
-        margin: 0 0 1.6021532940271728%;
+.preview {
+    padding: 1.845784689216003%;
+    border: 1px solid $color-grey-dark;
+    margin: 0 0 20px;
+
+    &__picture-big {
+            height: 377px;
+            overflow: hidden;
+            margin: 0 0 1.6021532940271728%;
+    }
     
     &__pic-thumbnail-wrapper {
         display: flex;

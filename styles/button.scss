@@ -10,7 +10,7 @@
     display: block;
     box-sizing: border-box;
     
-    &_blue {
+    &_theme-1 {
         background: $color-blue;
         
         &:hover {
@@ -18,7 +18,7 @@
         }
     }
     
-    &_orange {
+    &_theme-2 {
         background: $color-orange;
         
         &:hover {
@@ -26,7 +26,7 @@
         }
     }
     
-    &_pink {
+    &_theme-3 {
         background: $color-pink;
         
         &:hover {

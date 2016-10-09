@@ -529,6 +529,17 @@ textarea {
 .page__sidebar {
   width: 31.690702%;
 }
+.page__body-footer:after {
+  position: absolute;
+  content: '';
+  max-width: 1054px;
+  height: 5px;
+  right: 0px;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  background-image: repeating-linear-gradient(90deg, #ec098d 0px, #ec098d 35px, #5261ac 35px, #5261ac 70px, #8cc63f 70px, #8cc63f 105px, #00aedb 105px, #00aedb 140px, #f78f1d 140px, #f78f1d 175px);
+}
 .page__pagination {
   margin: 10px 0;
 }
@@ -546,7 +557,7 @@ textarea {
 }
 .category__title {
   font-family: "Helvetica LT Condensed Bold";
-  font-size: 1.1875rem;
+  font-size: 19px;
   text-transform: uppercase;
   color: #00aedb;
   margin: 0 0 0.5rem;
@@ -574,6 +585,7 @@ textarea {
   display: flex;
   flex-flow: row nowrap;
   padding: 0;
+  margin: 0;
 }
 .category__item {
   width: 32.72727272727273%;
@@ -598,22 +610,22 @@ textarea {
   display: block;
   box-sizing: border-box;
 }
-.button_blue {
+.button_theme-1 {
   background: #00aedb;
 }
-.button_blue:hover {
+.button_theme-1:hover {
   background: #0691b5;
 }
-.button_orange {
+.button_theme-2 {
   background: #f78f1d;
 }
-.button_orange:hover {
+.button_theme-2:hover {
   background: #ea8313;
 }
-.button_pink {
+.button_theme-3 {
   background: #ec098d;
 }
-.button_pink:hover {
+.button_theme-3:hover {
   background: #c10a75;
 }
 .button_violet {
@@ -830,23 +842,32 @@ textarea {
 
 .header__bar {
   margin: 0 0 2%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .img {
   max-width: 100%;
 }
 
-.picture {
+.preview {
+  padding: 1.845784689216003%;
+  border: 1px solid #898989;
+  margin: 0 0 20px;
+}
+.preview__picture-big {
   height: 377px;
   overflow: hidden;
   margin: 0 0 1.6021532940271728%;
 }
-.picture__pic-thumbnail-wrapper {
+.preview__pic-thumbnail-wrapper {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-.picture__pic-thumbnail {
+.preview__pic-thumbnail {
   width: 24.03229941040759%;
   padding: 0.8010766470135864%;
   border: 1px solid #898989;
@@ -944,11 +965,12 @@ textarea {
   color: #fff;
   border: 0;
   text-transform: uppercase;
-  font-size: 1.1875rem;
+  font-size: 19px;
   font-family: "Helvetica LT Condensed Bold";
   padding: 7px 18px;
-  left: -32px;
+  right: calc(100% - 95%);
   display: inline-block;
+  margin: 0;
 }
 .title:before {
   content: '';
@@ -1066,18 +1088,6 @@ textarea {
 
 .clearfix:after {
   clear: both;
-}
-
-.body__footer:after {
-  position: absolute;
-  content: '';
-  max-width: 1054px;
-  height: 5px;
-  right: 0px;
-  left: 0;
-  bottom: 0;
-  margin: 0 auto;
-  background-image: repeating-linear-gradient(90deg, #ec098d 0px, #ec098d 35px, #5261ac 35px, #5261ac 70px, #8cc63f 70px, #8cc63f 105px, #00aedb 105px, #00aedb 140px, #f78f1d 140px, #f78f1d 175px);
 }
 
 .html-content {
