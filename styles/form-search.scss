@@ -1,9 +1,10 @@
 .form-search {
     display: flex;
     height: $ui-height-xl;
+    width: 435px;
    
     &__input {
-        width: 333px;
+        flex: 1;
         font-family: $font-helvetica-bold;
         border: 1px solid $color-grey-dark;
     }

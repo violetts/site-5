@@ -1,22 +1,5 @@
 .widget-category {
     
-    &_noborder .widget-category__item {
-        border-bottom: 0;
-        padding: 7.374908360692315% 0 0;
-    }
-    
-    &_triangle .widget-category__item {
-        padding: 10px 0px 8px 24px;
-    }
-    
-    &__item {
-        display: flex;
-        justify-content: space-between;
-        padding: 15px 0;
-        border-bottom: 1px solid $color-grey;
-        position: relative;
-    }
-    
     &__header {
         background: $color-violet;
         color: $color-white;
@@ -25,13 +8,12 @@
         font-size: 19px;
         font-family: $font-helvetica-bold;
         padding: 2.2312179262423104% 5.737417524623083%;
-        display: inline-block;
-        width: 100%;
+        margin: 0;
         
         &_cut {
             position: relative;
-            max-width: 150px;
-            margin: 0;
+            display: inline-block;
+            margin-right: 38px;
             
             &:before {
                 content:'';
@@ -79,25 +61,11 @@
         width: 69.342811%;
     }
     
-    &__left {
-        width: 23.093361%;
-    }
-    
     &__img {
-        padding: 2px;
-        border: 1px solid $color-grey-dark;
         width: 100%;
     }
     
      & + & {
         margin-bottom: 10.3897763578274756%;
-    }
-    
-    &__triangle {
-        position: absolute;
-        color: $color-violet;
-        left: 0;
-        font-size: 1.2rem;
-        top: 16px;
     }
 }

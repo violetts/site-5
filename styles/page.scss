@@ -53,7 +53,7 @@
         width: 31.690702%;
     }
     
-    &__body-footer:after {
+    &__body-footer {
         position: absolute;
         content: '';
         max-width: 1054px;
@@ -64,10 +64,6 @@
         margin: 0 auto;
         background-image: repeating-linear-gradient(90deg, #ec098d 0px, #ec098d 35px, #5261ac 35px, #5261ac 70px, #8cc63f 70px, #8cc63f 105px, #00aedb 105px, #00aedb 140px, #f78f1d 140px, #f78f1d 175px);
         } 
-    
-    &__pagination {
-        margin: 10px 0;
-    }
     
     &__footer {
         text-align: center;

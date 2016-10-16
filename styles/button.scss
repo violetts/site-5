@@ -1,12 +1,12 @@
 .button {
     position: relative;
-    padding: 8px 30px 8px 10px;
+    padding: 0px 30px 0px 10px;
     font-family: "Helvetica LT Condensed Bold";
     font-size: 19px;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    height: $ui-height-xl;
+    line-height: $ui-height-xl;
     display: block;
     box-sizing: border-box;
     
@@ -33,15 +33,6 @@
             background: $color-pink_dark;
         }
     }
-    
-    &_violet {
-        background: $color-violet;
-        
-        &:hover {
-            background: $color-violet-dark;
-        }
-    }
-    
     
     &__search {
         background: $color-blue;

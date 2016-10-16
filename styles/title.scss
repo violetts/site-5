@@ -1,6 +1,5 @@
 .title {
     position: relative;
-    max-width: 225px;
     background: #5261ac;
     color: #fff;
     border: 0;
@@ -9,19 +8,24 @@
     font-family: "Helvetica LT Condensed Bold";
     padding: 7px 18px;
     right: calc(100% - 95%);
-    display: inline-block;
+    display: block;
     margin: 0;
+        
+        &_cut {
+            display: inline-block;
+            margin-right: 38px
+        }
 
         &:before {
-        content: '';
-        position: absolute;
-        width: 0px;
-        height: 0px;
-        display: block;
-        border-left: 38px solid #5261ac;
-        border-right: 38px solid transparent;
-        border-top: 38px solid transparent;
-        top: 0;
-        right: -75px;
-    }
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            display: block;
+            border-left: 38px solid #5261ac;
+            border-right: 38px solid transparent;
+            border-top: 38px solid transparent;
+            top: 0;
+            right: -75px;
+        }
 }
