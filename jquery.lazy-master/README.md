@@ -105,10 +105,10 @@ Take a look at the [documentation](http://jquery.eisbehr.de/lazy/) to get an ide
 ## Callbacks / Events
 Lazy comes with a bunch of [callbacks and events](http://jquery.eisbehr.de/lazy/index.php?c=callback) you can assign to.
 Just add them by initialization settings:
-* `beforeLoad` - before item is about to be loaded
-* `afterLoad` - after the item was loaded successfully
-* `onError` - whenever an item could not be loaded
-* `onFinishedAll` - after all items in instance was loaded or returned an error
+* `beforeLoad` - before list-item is about to be loaded
+* `afterLoad` - after the list-item was loaded successfully
+* `onError` - whenever an list-item could not be loaded
+* `onFinishedAll` - after all list-items in instance was loaded or returned an error
 
 
 ## Instances and public Functions
@@ -128,8 +128,8 @@ Every instance has some public available functions to control it's behavior.
 There are currently six available:
 ```JS
 instance.config(entryName[, newValue]); // get or set an configuration entry
-instance.addItems(items); // add new items to current instance
-instance.getItems(); // get all unhandled items left of current instance
+instance.addlist-items(list-items); // add new list-items to current instance
+instance.getlist-items(); // get all unhandled list-items left of current instance
 instance.update([useThrottle]); // loads all elements in current viewport
 instance.loadAll(); // loads all remaining available elements from this instance
 instance.destroy(); // unbinds all events and stop execution directly

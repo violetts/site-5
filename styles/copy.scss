@@ -1,4 +1,48 @@
 .copy {
     font-family: $font-helvetica;
     font-size: $fs-copy;
+    
+    
+    &__header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    
+    &__date {
+        font-size: 0.8rem;
+    }
+    
+    &__respond {
+        position: relative;
+        background: #fff;
+        padding: 10px 20px;
+        left: 87%;
+        color: #5261ac;
+        font-weight: 600;
+        top: 10px;
+    }
+    
+    &__title {
+        color: $color-blue;
+        font-size: 15px;
+        margin: 0 0 0.4em;
+        
+        &_violet {
+            color: #5261ac;
+        }
+    }
+    
+    &__content {
+        font-size: 13px;
+        margin: 0;
+    }
+    
+    &__link {
+        color: $color-blue;
+        font-size: 0.8125rem;
+        text-decoration: none;
+        display: inline-block;
+        margin: 18px 0 0;
+    }
 }

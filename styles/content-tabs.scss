@@ -1,0 +1,35 @@
+.content-tabs {
+    margin: 0;
+    padding: 0;
+    
+    &_main {
+        display: inline-block;
+        vertical-align: top;
+        width: 300px;
+    }
+    
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px 0px 8px 24px;
+        border-bottom: 1px solid $color-grey;
+        
+        &_main {
+            border-bottom: 0;
+        }
+    }
+
+    &__bullet {
+        position: absolute;
+        color: $color-violet;
+        left: 0;
+        font-size: 1.2rem;
+        top: 10px;
+    }  
+
+     &__content {
+        font-size: 13px;
+        margin: 0;
+    }
+}

@@ -87,12 +87,12 @@
      * @type {function}
      * @param {LazyPlugin} instance
      * @param {object} config
-     * @param {object|Array} items
+     * @param {object|Array} list-items
      * @param {object} events
      * @param {string} namespace
      * @return void
      */
-    function _executeLazy(instance, config, items, events, namespace) {
+    function _executeLazy(instance, config, list-items, events, namespace) {
         /**
          * a helper to trigger the 'onFinishedAll' callback after all other events
          * @access private
@@ -179,7 +179,7 @@
 
         /**
          * initialize plugin
-         * bind loading to events or set delay time to load all items at once
+         * bind loading to events or set delay time to load all list-items at once
          * @access private
          * @return void
          */
@@ -188,11 +188,11 @@
             // noinspection JSUnresolvedVariable
             _isRetinaDisplay = window.devicePixelRatio > 1;
 
-            // prepare all initial items
-            _prepareItems(items);
+            // prepare all initial list-items
+            _preparelist-items(list-items);
 
-            // if delay time is set load all items at once after delay time
-            if( config.delay >= 0 ) setTimeout(function() { _lazyLoadItems(true); }, config.delay);
+            // if delay time is set load all list-items at once after delay time
+            if( config.delay >= 0 ) setTimeout(function() { _lazyLoadlist-items(true); }, config.delay);
 
             // if no delay is set or combine usage is active bind events
             if( config.delay < 0 || config.combined ) {
@@ -203,25 +203,25 @@
                         _actualWidth = _actualHeight = -1;
 
                     // execute 'lazy magic'
-                    _lazyLoadItems(event.all);
+                    _lazyLoadlist-items(event.all);
                 });
 
-                // create function to add new items to instance
-                events.a = function(additionalItems) {
-                    _prepareItems(additionalItems);
-                    items.push.apply(items, additionalItems);
+                // create function to add new list-items to instance
+                events.a = function(additionallist-items) {
+                    _preparelist-items(additionallist-items);
+                    list-items.push.apply(list-items, additionallist-items);
                 };
 
-                // create function to get all instance items left
+                // create function to get all instance list-items left
                 events.g = function() {
-                    // filter loaded items before return in case internal filter was not running until now
-                    return (items = $(items).filter(function() {
+                    // filter loaded list-items before return in case internal filter was not running until now
+                    return (list-items = $(list-items).filter(function() {
                         return !$(this).data(config.loadedName);
                     }));
                 };
 
-                // load initial items
-                _lazyLoadItems();
+                // load initial list-items
+                _lazyLoadlist-items();
 
                 // bind lazy load functions to scroll and resize event
                 // noinspection JSUnresolvedVariable
@@ -230,12 +230,12 @@
         }
 
         /**
-         * prepare items before handle them
+         * prepare list-items before handle them
          * @access private
-         * @param {Array|object|jQuery} items
+         * @param {Array|object|jQuery} list-items
          * @return void
          */
-        function _prepareItems(items) {
+        function _preparelist-items(list-items) {
             // fetch used configurations before loops
             var defaultImage = config.defaultImage,
                 placeholder = config.placeholder,
@@ -244,8 +244,8 @@
                 loaderAttribute = config.loaderAttribute,
                 forcedTags = config._f || {};
 
-            // filter items and only add those who not handled yet and got needed attributes available
-            items = $(items).filter(function() {
+            // filter list-items and only add those who not handled yet and got needed attributes available
+            list-items = $(list-items).filter(function() {
                 var element = $(this),
                     tag = _getElementTagName(this);
 
@@ -256,9 +256,9 @@
             // append plugin instance to all elements
             .data("plugin_" + config.name, instance);
 
-            for( var i = 0, l = items.length; i < l; i++ ) {
-                var element = $(items[i]),
-                    tag = _getElementTagName(items[i]),
+            for( var i = 0, l = list-items.length; i < l; i++ ) {
+                var element = $(list-items[i]),
+                    tag = _getElementTagName(list-items[i]),
                     elementImageBase = element.attr(config.imageBaseAttribute) || imageBase;
 
                 // generate and update source set if an image base is set
@@ -280,14 +280,14 @@
         }
 
         /**
-         * the 'lazy magic' - check all items
+         * the 'lazy magic' - check all list-items
          * @access private
-         * @param {boolean} [allItems]
+         * @param {boolean} [alllist-items]
          * @return void
          */
-        function _lazyLoadItems(allItems) {
-            // skip if no items where left
-            if( !items.length ) {
+        function _lazyLoadlist-items(alllist-items) {
+            // skip if no list-items where left
+            if( !list-items.length ) {
                 // destroy instance if option is enabled
                 if( config.autoDestroy )
                     // noinspection JSUnresolvedFunction
@@ -301,12 +301,12 @@
                 srcsetAttribute = config.srcsetAttribute,
                 handledName = config.handledName;
 
-            // loop all available items
-            for( var i = 0; i < items.length; i++ ) {
-                // item is at least in loadable area
-                if( allItems || _isInLoadableArea(items[i]) ) {
-                    var element = $(items[i]),
-                        tag = _getElementTagName(items[i]),
+            // loop all available list-items
+            for( var i = 0; i < list-items.length; i++ ) {
+                // list-item is at least in loadable area
+                if( alllist-items || _isInLoadableArea(list-items[i]) ) {
+                    var element = $(list-items[i]),
+                        tag = _getElementTagName(list-items[i]),
                         attribute = element.attr(config.attribute),
                         elementImageBase = element.attr(config.imageBaseAttribute) || imageBase,
                         customLoader = element.attr(config.loaderAttribute);
@@ -329,15 +329,15 @@
                         loadTriggered = true;
                         element.data(handledName, true);
 
-                        // load item
-                        _handleItem(element, tag, elementImageBase, customLoader);
+                        // load list-item
+                        _handlelist-item(element, tag, elementImageBase, customLoader);
                     }
                 }
             }
 
-            // when something was loaded remove them from remaining items
+            // when something was loaded remove them from remaining list-items
             if( loadTriggered )
-                items = $(items).filter(function() {
+                list-items = $(list-items).filter(function() {
                     return !$(this).data(handledName);
                 });
         }
@@ -351,8 +351,8 @@
          * @param {function} [customLoader]
          * @return void
          */
-        function _handleItem(element, tag, imageBase, customLoader) {
-            // increment count of items waiting for after load
+        function _handlelist-item(element, tag, imageBase, customLoader) {
+            // increment count of list-items waiting for after load
             ++_awaitingAfterLoad;
 
             // extended error callback for correct 'onFinishedAll' handling
@@ -390,8 +390,8 @@
                     // call after load event
                     _triggerCallback(_afterLoad, element);
 
-                    // remove item from waiting queue and possibly trigger finished event
-                    // it's needed to be asynchronous to run after filter was in _lazyLoadItems
+                    // remove list-item from waiting queue and possibly trigger finished event
+                    // it's needed to be asynchronous to run after filter was in _lazyLoadlist-items
                     setTimeout(_reduceAwaiting, 1);
 
                     // prevent further callback calls
@@ -460,7 +460,7 @@
                     // cleanup image object
                     imageObj.remove();
 
-                    // remove item from waiting queue and possibly trigger finished event
+                    // remove list-item from waiting queue and possibly trigger finished event
                     _reduceAwaiting();
                 });
 
@@ -583,8 +583,8 @@
         function _reduceAwaiting() {
             --_awaitingAfterLoad;
 
-            // if no items were left trigger finished event
-            if( !items.length && !_awaitingAfterLoad ) _triggerCallback("onFinishedAll");
+            // if no list-items were left trigger finished event
+            if( !list-items.length && !_awaitingAfterLoad ) _triggerCallback("onFinishedAll");
         }
 
         /**
@@ -610,7 +610,7 @@
         if( config.bind == "event" || windowLoaded )
             _initialize();
 
-        // otherwise load initial items and start lazy after page load
+        // otherwise load initial list-items and start lazy after page load
         else // noinspection JSUnresolvedVariable
             $(window).on(_load + "." + namespace, _initialize);
     }
@@ -673,29 +673,29 @@
 
         // noinspection JSUndefinedPropertyAssignment
         /**
-         * add additional items to current instance
+         * add additional list-items to current instance
          * @access public
-         * @param {Array|object|string} items
+         * @param {Array|object|string} list-items
          * @return {LazyPlugin}
          */
-        _instance.addItems = function(items) {
-            _events.a && _events.a($.type(items) === "string" ? $(items) : items); // jshint ignore : line
+        _instance.addlist-items = function(list-items) {
+            _events.a && _events.a($.type(list-items) === "string" ? $(list-items) : list-items); // jshint ignore : line
             return _instance;
         };
 
         // noinspection JSUndefinedPropertyAssignment
         /**
-         * get all left items of this instance
+         * get all left list-items of this instance
          * @access public
          * @returns {object}
          */
-        _instance.getItems = function() {
+        _instance.getlist-items = function() {
             return _events.g ? _events.g() : {};
         };
 
         // noinspection JSUndefinedPropertyAssignment
         /**
-         * force lazy to load all items in loadable area right now
+         * force lazy to load all list-items in loadable area right now
          * by default without throttle
          * @access public
          * @type {function}
@@ -709,7 +709,7 @@
 
         // noinspection JSUndefinedPropertyAssignment
         /**
-         * force lazy to load all available items right now
+         * force lazy to load all available list-items right now
          * this call ignores throttling
          * @access public
          * @type {function}
