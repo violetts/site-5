@@ -4,10 +4,14 @@
     
     &__triangle {
         position: absolute;
-        color: $color-orange;
-        font-size: 26px;
-        bottom: -17px;
-        left: 128px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-top: 10px solid $color-orange;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        top: 100%;
+        left: 40%;
     }
     
     &__link {

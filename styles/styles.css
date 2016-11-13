@@ -484,11 +484,13 @@ textarea {
 .copy__respond {
   position: relative;
   background: #fff;
-  padding: 10px 20px;
-  left: 87%;
+  padding: 0px 20px;
+  float: right;
   color: #5261ac;
   font-weight: 600;
-  top: 10px;
+  line-height: 1.5;
+  font-size: 14px;
+  margin: 0 0 -4px;
 }
 .copy__title {
   color: #00aedb;
@@ -763,8 +765,9 @@ textarea {
   text-transform: uppercase;
   font-size: 19px;
   font-family: "Helvetica LT Condensed Bold";
-  padding: 7px 18px;
+  padding: 0px 18px;
   margin: 0;
+  line-height: 38px;
 }
 .widget-category__header_cut {
   position: relative;
@@ -784,7 +787,7 @@ textarea {
   left: 100%;
 }
 .widget-category__header_sticked {
-  right: 32px;
+  margin: 0 0 0 -32px;
 }
 .widget-category__wrapper {
   padding: 15px 0;
@@ -817,10 +820,14 @@ textarea {
 }
 .aside-navigation__triangle {
   position: absolute;
-  color: #f78f1d;
-  font-size: 26px;
-  bottom: -17px;
-  left: 128px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #f78f1d;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: 100%;
+  left: 40%;
 }
 .aside-navigation__link {
   font-family: "Helvetica LT Condensed Bold";
@@ -1116,7 +1123,8 @@ textarea {
   color: #5261ac;
   left: 0;
   font-size: 1.2rem;
-  top: 10px;
+  line-height: 0;
+  top: 50%;
 }
 .content-tabs__content {
   font-size: 13px;

@@ -16,11 +16,13 @@
     &__respond {
         position: relative;
         background: #fff;
-        padding: 10px 20px;
-        left: 87%;
+        padding: 0px 20px;
+        float: right;
         color: #5261ac;
         font-weight: 600;
-        top: 10px;
+        line-height: 1.5;
+        font-size: 14px;
+        margin: 0 0 -4px;
     }
     
     &__title {
